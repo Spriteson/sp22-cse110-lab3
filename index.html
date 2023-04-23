@@ -2,24 +2,32 @@
 <html lang="en">
   <head>
     <title> This is CSE 110 Lab2</title>
+    <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="1th Meeting minutes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="screenshots/1234.png">
+    <link rel="stylesheet" href="style.css">
 
   </head>
   <body>
-    <h3>    Date: <span>Web</span>
-    <span>Apr</span>
-    <span>12</span></h3>
     <header>
-		<h1>CSE 110 Timer First Brainstorm</h1>
+      <h3>    Date: <span>Web</span>
+      
+        <span>Apr</span>
+        <span>12</span></h3>
+        <a href="#attendance">Attendance</a>
+		<h1 class = "text-cente">CSE 110 Timer First Brainstorm</h1>
 	</header>
 	<main>
 		<article>
 			<h2>    Check-ins</h2>
-                <div>This is our group's first meeting, before we get started, let's take a few minutes for introductions.
-                </div>
-                <div>
-                    Please feel free to share about the following information:
-                </div>
+      <div>This is our group's first meeting, before we get started, let's take a few minutes for introductions.<br>
+                    Please feel free to share about the following information:</div>
                 <ul>
+                
                     <li>
                             Your name
                     </li>
@@ -29,14 +37,15 @@
                     <li>  
                             Favorite things to do
                     </li>
+
                 </ul>
 		</article>
 	</main>
-    <h2>    Attendance list</h2>
+    <h2 id="attendance">Attendance list</h2>
     <details>
         <summary>See who came to the meeting</summary>
         <ul>
-            <li><p>John Smith</p></li>
+            <li><p class="text-underline">John Smith</p></li>
             <li><p>Jane Doe</p></li>
             <li><p>Bob Johnson</p></li>
         </ul>
@@ -68,9 +77,12 @@
             </ol></li>
         <li>Adjournment</li>
     </ol>
+    <hr>
 
     <h2>    Pictures </h2>
-    <p>I like traveling, and I this is the place I want to go in one day</p>
+    <p> I like <abbr title="fav thing">traveling</abbr>, and I this is the place I want to go in one day.<br>Feel free to share <abbr title="fav">yours</abbr></p>
+
+
     <img src="screenshots/yinghua.jpeg" alt="describes the image being shown for screen readers, or if the image can't be displayed" width="500">
 
     <h2>    Audio recording the meeting</h2>
@@ -84,14 +96,58 @@
   <source src="screenshots/ECE196_team05_demo_video.MP4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-
-<fieldset>
-    <legend>More idea</legend>
-    <div>If you didn't come to the meeting, feel free to send your idea to us.</div>
-    </fieldset>
-    If you are interested, click the bottom for music.
+<div>
+<a href="https://www.youtube.com/watch?v=1SPP-nIbmu4">There is other music I like</a>
+</div >
+  If you are interested, click the bottom for one more.
     <div class="button-container">
-        <button onclick="window.location.href='https://www.youtube.com/watch?v=a5zohrtfH9o'">Click</button>
+        <button  onclick="window.location.href='https://www.youtube.com/watch?v=a5zohrtfH9o'">Click</button>
       </div>
+<form>
+  <fieldset>
+    <legend>More idea</legend>
+    <div>If you didn't come to the meeting, feel free to send your idea to us. And send us your information we will contact you back ASPS</div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone"><br><br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <label for="contact">Preferred contact:</label>
+    <select id="contact" name="contact">
+      <option value="apple">Email</option>
+      <option value="banana">Phone</option>
+    </select><br><br>
+    <label for="Language">Favorite Languages:</label>
+    <input list="Languages" id="Language" name="Language">
+    <datalist id="Languages">
+      <option value="English">
+      <option value="Spanish">
+    </datalist><br><br>
+    <label for="agree">Agree to terms:</label>
+    <input type="checkbox" id="agree" name="agree" value="agree"><br><br>
+    <button class = "text-underline" type="submit">Submit</button>
+  </fieldset>
+</form>
+  <div class="container">
+    <div class="flex-item1">CSE</div>
+    <div class="flex-item2">110</div>
+    <div class="flex-item3">Software Engineering</div>
+  </div>
+
+  <div class="grid-container">
+    <div class="item-a text-center">Header</div>
+    <div class = "item-b">main</div>
+    <div class = "item-c">sidebar</div>
+    <div class = "item-d text-center">footer</div>
+  </div>
+
+  <div>Watch this element as you resize your viewport's width.</div>
+
   </body>
 </html>
