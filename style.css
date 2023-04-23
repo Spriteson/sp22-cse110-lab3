@@ -1,4 +1,6 @@
-  
+  * {
+    margin: 10px 10px 10px 5px;
+  }
   /*relative units, margin long, display, position*/
   h1 {
     font-family: 'Bruno Ace SC', cursive;
@@ -144,5 +146,55 @@
   @media (min-width:960px) { body {font-size:1.0rem;} }
   @media (min-width:1100px) { body {font-size:1.2rem;} }
 
+  /*id selector*/
+  #id {
+    background-color: rgb(86, 139, 119);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  p, li {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #502190;
+  }
+
+  /*Child Combinator*/
+  ul > li {
+    background-color: #ebecde;
+    border: 1px solid #ccc;
+    padding: 16px;
+  }
+
+  /*General sibling combinator */
+  h2 ~ p {
+    font-size: 16px;
+    color: #7c7a81;
+  }
+  
+  /*Adjacent sibling combinator*/
+  label + input {
+    color: rgb(125, 116, 149);
+    font-weight: bold;
+  }
+
+  /*Combining Two Selectors*/
+  div.container {
+    width: 960px;
+    margin: 0 auto;
+    color:rgb(169, 120, 211);
+  }
 
   
